@@ -2,6 +2,20 @@
 # Unidad 3
 ---
 ## Documentación del proyecto
-Nombre:  
-ID:  
+Nombre:  Sergio González Losada
+ID:  000548401
 ---
+# Título
+
+#### Descripción:
+La actividad física es beneficiosa para todos. Hacer deporte es crucial, pero tanto como hacerlo, es llevar registro del progreso, los objetivos establecidos, y el avance que se tiene en ellos, "Lo que se mide se mejora". Para algunas personas, llevar un historial de sus entrenos y progreso físico es complicado, creen que es suficiente con memorizarlo, lo llevan en hojas o material físico que tiende a perderse, ó en el caso de usar herramientas digitales, son muy complejas para continuar usándolas a largo plazo.
+Con este programa se busca crear una herramienta fácil e intuitiva, que ayude a llevar control de los entrenos y del progreso que se va realizando en distintos deportes.
+
+#### Alcance:
+El programa debe ayudar al usuario a llevar control de sus entrenos y prácticas deportivas. Inicialmente llevando un registro general de la persona, con su peso, talla, tiempos correspondientes a ciertas pruebas, cantidad de entrenos que tendrá a la semana y metas. Posteriormente, dejará llevar registro de cada uno de esos entrenos, con la distancia total recorrida, el tipo de prueba en el que se hizo, los tiempos por cierta distancia y la duración de los entrenos (Datos añadidos por el usuario), con estos datos, el programa mostrará los avances que han habido, las diferencias de tiempo/distancia que se presenten y un registro general de los progresos. 
+Con la idea inicial del programa, se apunta a ayudar a deportistas en alguna disciplina de triatlón, bien sea natación, ciclismo, carrera (running), o en las tres.
+
+#### Estructuras de datos:
+Par el desarrollo de programas se emplearán principalmente listas y diccionarios, que serán acompañadas de funciones y métodos para cumplir todas las tareas del programa. De ser necesario, se emplearán otros métodos de control de datos, aunque en menor medida.
+
+#### Diagrama de flujo:
