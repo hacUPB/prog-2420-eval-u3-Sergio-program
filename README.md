@@ -18,4 +18,23 @@ Con la idea inicial del programa, se apunta a ayudar a deportistas en alguna dis
 #### Estructuras de datos:
 Par el desarrollo de programas se emplearán principalmente listas y diccionarios, que serán acompañadas de funciones y métodos para cumplir todas las tareas del programa. De ser necesario, se emplearán otros métodos de control de datos, aunque en menor medida.
 
-#### Diagrama de flujo:
+#### Pseudocódigo:
+
+```
+Inicio
+    mientras true
+        imprimir("1: Nuevo entreno\n2: Explorar entrenos")
+        opción = input(int("Seleccione una opción"))
+            if opción == 1:
+                funcion para añadir un entreno
+            elif
+                while true
+                    imprimir("1: Mayor distancia recorrida\n2: Menor tiempo por prueba")
+                    if opción == 1:
+                        mostrar biblioteca del entreno con mayor distancia total
+                    if opción == 2:
+                        while true:
+                            imprimir("Ingrese la prueba para ver su menor tiempo")
+                            mostrar el menor tiempo de la prueba elegida
+        else: imprimir("Opción no válida") 
+```
