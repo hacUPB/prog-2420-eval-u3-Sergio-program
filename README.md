@@ -12,7 +12,7 @@ La actividad física es beneficiosa para todos. Hacer deporte es crucial, pero t
 Con este programa se busca crear una herramienta fácil e intuitiva, que ayude a llevar control de los entrenos y del progreso que se va realizando en distintos deportes.
 
 #### Alcance:
-El programa debe ayudar al usuario a llevar control de sus entrenos y prácticas deportivas. Inicialmente llevando un registro general de la persona, con su peso, talla, tiempos correspondientes a ciertas pruebas, cantidad de entrenos que tendrá a la semana y metas. Posteriormente, dejará llevar registro de cada uno de esos entrenos, con la distancia total recorrida, el tipo de prueba en el que se hizo, los tiempos por cierta distancia y la duración de los entrenos (Datos añadidos por el usuario), con estos datos, el programa mostrará los avances que han habido, las diferencias de tiempo/distancia que se presenten y un registro general de los progresos. 
+El programa debe ayudar al usuario a llevar control de sus entrenos y prácticas deportivas. Inicialmente llevando un registro general de la persona, con su peso, talla, tiempos correspondientes a ciertas pruebas, cantidad de entrenos que tendrá a la semana y metas. Posteriormente, dejará llevar registro de cada uno de esos entrenos, con la distancia total recorrida, el tipo de prueba en el que se hizo, los tiempos por cierta distancia y la duración de los entrenos (Datos añadidos por el usuario), el programa recopilará estos datos y los mostrará.
 Con la idea inicial del programa, se apunta a ayudar a deportistas en alguna disciplina de triatlón, bien sea natación, ciclismo, carrera (running), o en las tres.
 
 #### Estructuras de datos:

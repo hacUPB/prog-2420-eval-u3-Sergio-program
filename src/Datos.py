@@ -1,11 +1,24 @@
 #Importe de funciones ya existentes que nos ayudarán a la estética y funcionalidad de nuestro código.
 import datetime
-import os
+from os import system
 
 #Listas que se van a llenar con los entrenos de la respectiva disciplina.
 lista_entrenos_natación = []
 lista_entrenos_ciclismo = []
 lista_entrenos_runner = []
+lista_deportistas = []
+
+#Esta función crea un diccionario con las claves predeterminadas de un deportista.
+def crear_deportista():
+    deportista = {
+        "Deportista": input("Nombre del desportista: "),
+        "Peso": int(input("Ingrese el peso del deportista (Kg): ")),
+        "Altura": int(input("Ingrese la estatura del deportista (cm): ")),           
+        "Disciplina principal": input("Ingrese la discilina principal del deportista: "),
+        "Entrenos_semana": int(input("Número de entrenos a la semana")),
+        "Prueba_objetivo": input("¿Qué prueba desea preparar?")
+    }
+    return  deportista
 
 #Esta función crea un diccionario con las claves predeterminadas para la natación y los datos los llena el usuario.
 def crea_entreno_natación():
@@ -44,7 +57,7 @@ def crea_entreno_runner():
 
 #Esta función alberga el menú principal del programa, que permite elegir entre explorar o crear entrenos y salir.
 def menu_principal():
-    print("1: Registrar nuevo entreno\n2: Explorar entrenos\n3: Salir")
+    print("1: Registrar nuevo entreno\n2: Explorar\n3: Registar deportistas\n4: Salir")
     opción = int(input("¿Qué desea hacer?: "))
     return opción
 
@@ -56,7 +69,7 @@ def menu_deportes():
 
 #Esta fuhnción alberga el menú para explorar entrenos ya existentes, dejando elegir la disciplina.
 def menu_explorar():
-    print("1: Explorar entrenos de natación\n2: Explorar entrenos de ciclismo\n3: Explorar entrenos de carrera\n4: Volver")
+    print("1: Explorar entrenos de natación\n2: Explorar entrenos de ciclismo\n3: Explorar entrenos de carrera\n4: Explorar deportistas\n5: Volver")
     explora = int(input("Seleccione la disciplina a explorar: "))
     return explora
 
@@ -81,19 +94,24 @@ def explorar_entrenos(lista_entrenos):
 #Código principal del programa, que fusiona las funciones creadas previamente.          
 def main():
     #Bucle while que mantiene al menú principal corriéndose indefinidamente.
+    
     while True:
         opción = menu_principal()
         
         #Creación de entrenos y listas.
         if opción == 1:
+            system ('cls')
             deporte = menu_deportes()
             if deporte == 1:
+                system ('cls')
                 entreno_natación = crea_entreno_natación()
                 cambia_nombre_crea_lista(lista_entrenos_natación, entreno_natación, "entreno_natación")
             elif deporte == 2:
+                system ('cls')
                 entreno_ciclismo = crea_entreno_ciclismo()
                 cambia_nombre_crea_lista(lista_entrenos_ciclismo, entreno_ciclismo, "entreno_ciclismo")
             elif deporte == 3:
+                system ('cls')
                 entreno_runner = crea_entreno_runner()
                 cambia_nombre_crea_lista(lista_entrenos_runner, entreno_runner, "entreno_runner")
             elif deporte == 4:
@@ -103,20 +121,32 @@ def main():
         
         #Exploración de entrenos y listas.
         elif opción == 2:
+            system ('cls')
             explora = menu_explorar()
             if explora == 1:
+                system ('cls')
                 explorar_entrenos(lista_entrenos_natación)
             elif explora == 2:
+                system ('cls')
                 explorar_entrenos(lista_entrenos_ciclismo)
             elif explora == 3:
+                system ('cls')
                 explorar_entrenos(lista_entrenos_runner)
             elif explora == 4:
+                system('cls')
+                explorar_entrenos(lista_deportistas)
+            elif explora == 5:
                 break
             else:
                 print("Opción no válida")
         
-        #Cierre del bucle while
         elif opción == 3:
+            deportista = crear_deportista()
+            cambia_nombre_crea_lista(lista_deportistas, deportista, "Deportista")
+
+        #Cierre del bucle while
+        elif opción == 4:
+            system ('cls')
             print("Cerrando programa")
             break
         else:
