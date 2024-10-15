@@ -5,7 +5,7 @@
 Nombre:  Sergio González Losada
 ID:  000548401
 ---
-# Título
+# Título: Thundersports
 
 #### Descripción:
 La actividad física es beneficiosa para todos. Hacer deporte es crucial, pero tanto como hacerlo, es llevar registro del progreso, los objetivos establecidos, y el avance que se tiene en ellos, "Lo que se mide se mejora". Para algunas personas, llevar un historial de sus entrenos y progreso físico es complicado, creen que es suficiente con memorizarlo, lo llevan en hojas o material físico que tiende a perderse, ó en el caso de usar herramientas digitales, son muy complejas para continuar usándolas a largo plazo.

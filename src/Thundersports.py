@@ -14,9 +14,9 @@ def crear_deportista():
         "Deportista": input("Nombre del desportista: "),
         "Peso": int(input("Ingrese el peso del deportista (Kg): ")),
         "Altura": int(input("Ingrese la estatura del deportista (cm): ")),           
-        "Disciplina principal": input("Ingrese la discilina principal del deportista: "),
-        "Entrenos_semana": int(input("Número de entrenos a la semana")),
-        "Prueba_objetivo": input("¿Qué prueba desea preparar?")
+        "Disciplina_principal": input("Ingrese la discilina principal del deportista: "),
+        "Entrenos_semana": int(input("Número de entrenos a la semana: ")),
+        "Prueba_objetivo": input("¿Qué prueba desea preparar?: ")
     }
     return  deportista
 
@@ -91,6 +91,9 @@ def explorar_entrenos(lista_entrenos):
                 print(f"  {clave}: {valor}")
             print()
 
+def mayor_distancia(lista, clave):
+    pass
+    
 #Código principal del programa, que fusiona las funciones creadas previamente.          
 def main():
     #Bucle while que mantiene al menú principal corriéndose indefinidamente.
