@@ -91,8 +91,12 @@ def explorar_entrenos(lista_entrenos):
                 print(f"  {clave}: {valor}")
             print()
 
-def mayor_distancia(lista, clave):
-    pass
+def mayor_distancia(lista_entrenos):
+    lista = []
+    for nombre_entrenos, entreno in lista_entrenos:
+        lista.append(entreno["Distancia total recorrida (km)"])
+    mayor = max(lista)
+    return mayor
     
 #Código principal del programa, que fusiona las funciones creadas previamente.          
 def main():
@@ -129,6 +133,8 @@ def main():
             if explora == 1:
                 system ('cls')
                 explorar_entrenos(lista_entrenos_natación)
+                m = mayor_distancia(lista_entrenos_natación)
+                print(m)
             elif explora == 2:
                 system ('cls')
                 explorar_entrenos(lista_entrenos_ciclismo)
